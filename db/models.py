@@ -2,9 +2,9 @@ from sqlalchemy import Column, Integer, String
 from .database import Base
 
 
-class DBUser(Base):
+class DbUser(Base):
     __tablename__ = "user"
     id = Column(Integer, primary_key=True, index=True)
-    user_name = Column(String)
+    username = Column(String)
     email = Column(String)
     password = Column(String)
